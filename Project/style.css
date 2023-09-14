@@ -1,0 +1,42 @@
+ @charset "UTF-8";
+
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+ body{
+    background-image: linear-gradient(#7a060601,#14050563,#00000054);
+ }
+ h1, h2{
+   padding: 10px;
+   margin: 15px;
+   text-align: center;
+ }
+ p{
+   margin: 15px;
+ }
+ nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+ }
+ nav.logo{
+    font-size: 35px;
+    font-style: italic;
+    color: white;
+    font-weight: bold;
+
+ }
+ ul{list-style-type: none;}
+ li{float: left;
+    }
+a{
+   padding: 10px;
+   
+   border-radius: 5px;
+   background-color: rgb(230, 197, 11);
+}
+li a:hover{
+   background-color: black;
+
+}
