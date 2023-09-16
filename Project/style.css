@@ -1,12 +1,72 @@
  @charset "UTF-8";
+ font-family: 'Comfortaa', cursive;
+font-family: 'Quicksand', sans-serif;
 
 *{margin: 0;
 padding: 0;
 box-sizing: border-box;}
  body{
-    background-image: linear-gradient(#7a060601,#14050563,#00000054);
+    background-color:  #808487;
+    color: rgb(58, 70, 71);
  }
- h1, h2{
+
+ 
+ .logo{
+   padding: 20px;
+   margin: 20px;
+   
+   width: 15px;
+   height: 15px;
+   font-family:   Times, serif;
+ }
+ .logo img{
+   width: 40px;
+   height: 40px;
+   margin-left: 10px;
+ }
+ content {
+  
+  position: relative ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 90px;
+  
+
+ }
+ 
+
+ 
+ content h1{
+  position:absolute ;
+   
+   
+   transform: translate(-50 ,-50);
+   font-size: 5em;
+   
+   
+ }
+  content h1:nth-child(1){
+   color: transparent;
+   -webkit-text-stroke: 2px rgb(0, 238, 255);
+   
+      
+ }
+ content h1:nth-child(2){
+   color: rgb(0, 238, 255);
+   animation: animate 4s  ease-in-out infinite;
+ }
+ @keyframes animate { 0%,100%{
+   clip-path: polygon(0% 79%, 14% 68%, 22% 59%, 33% 57%, 43% 59%, 53% 73%, 61% 76%, 80% 69%, 84% 61%, 91% 51%, 98% 53%, 100% 63%, 100% 100%, 0% 100%);
+ }
+   
+ 50%{
+   clip-path: polygon(3% 52%, 16% 50%, 19% 50%, 31% 58%, 39% 64%, 41% 71%, 50% 73%, 71% 74%, 79% 76%, 83% 76%, 96% 69%, 100% 75%, 100% 100%, 0% 100%, 62% 71%, 53% 93%, 0% 98%);
+ }
+ 
+ }
+  h2{
    padding: 10px;
    margin: 15px;
    text-align: center;
@@ -25,7 +85,7 @@ box-sizing: border-box;}
     font-style: italic;
     color: white;
     font-weight: bold;
-
+    margin-left: 40px;
  }
  ul{list-style-type: none;}
  li{float: left;
@@ -34,9 +94,19 @@ a{
    padding: 10px;
    
    border-radius: 5px;
-   background-color: rgb(230, 197, 11);
+   background-color: rgb(4, 6, 19);
+   color: rgba(0, 174, 255, 0.986);
+   font-family: 'Quicksand', sans-serif,bold;
+   margin: 5px;
+   border-radius: 5px;
+   text-decoration: none;
+
 }
 li a:hover{
-   background-color: black;
+   background-color: rgb(15, 201, 248);
 
+}
+footer{
+  text-align: center;
+  margin: 40px;
 }
